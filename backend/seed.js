@@ -128,4 +128,10 @@ const seedData = async () => {
   }
 };
 
-seedData();
+// Export mockProducts and run check
+module.exports = { mockProducts };
+
+if (require.main === module) {
+  seedData();
+}
+
